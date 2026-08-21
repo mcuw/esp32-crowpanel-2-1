@@ -1,15 +1,14 @@
-# ESP32 project template
+# ESP32 S3 CrowPanel 2.1 inch HMI rotary encoder and touch display
 
-<img src="doc/hero_1024.webp" alt="ESP32 Hero Image" width="1024" />
+<img src="doc/hero_crawpanel.png" alt="ESP32 CrowPanel 2.1 inch" width="1024" />
 
 ## Description
 
-This is a project template to create microcontroller apps with automated firmware builds for [ESP32](https://www.espressif.com/en/products/socs/esp32), [ESP32-S2](https://www.espressif.com/en/products/socs/esp32-s2), [ESP32-S3](https://www.espressif.com/en/products/socs/esp32-s3), [ESP32-C6](https://www.espressif.com/en/products/socs/esp32-c6), [ESP32-H2](https://www.espressif.com/en/products/socs/esp32-h2) and [ESP32-P4](https://www.espressif.com/en/products/socs/esp32-p4) microcontroller boards. It uses [GitHub Actions](https://github.com/features/actions) and [pioarduino](#pioarduino) (for old boards [platformIO](#platformio)). Use this repository as a template for your own ESP32 projects. If you like this template then please support by giving a star to this repository.
+This repository provide examples for the [CrowPanel 2.1](https://www.elecrow.com/crowpanel-2-1inch-hmi-esp32-rotary-display-480-480-ips-round-touch-knob-screen.html) inch rotary encoder tourch display.
 
 ## Features
 
 - Uses PlatformIO (compatible)
-- Supports multiple firmwares builds with github actions
 - Example code
 
 ## Prerequisites
@@ -22,38 +21,7 @@ This is a project template to create microcontroller apps with automated firmwar
 
 You can use these links to buy a developer board. If you want to support this project then use the affiliate links marked with a *. For you it does not cost more.
 
-
-- ESP32
-  - [LilyGo](https://lilygo.cc/) [T-Beam v0.7/ v1.1](https://s.click.aliexpress.com/e/_DBzslDV)* GPS, LoRa, LiPo 18500 charger
-  - [LilyGo](https://lilygo.cc/) [TTGO LORA32 v1.6.1](https://s.click.aliexpress.com/e/_c3WEJk85)* LoRa
-  - [lolin32](https://www.wemos.cc/en/latest/d32/d32.html)
-  - [lolin D32 pro](https://www.wemos.cc/en/latest/d32/d32_pro.html)
-- ESP32 S2
-- ESP32 S3 with dual-core processor up to 240 MHz
-  - [LilyGo](https://lilygo.cc/) [T-Display S3](https://s.click.aliexpress.com/e/_DBmOMkn)*
-  - [LilyGo](https://lilygo.cc/) [T-Display-S3 AMOLED](https://s.click.aliexpress.com/e/_DmboYpZ)*
-  - [LilyGo](https://lilygo.cc/) [T-Display-S3 Touch](https://s.click.aliexpress.com/e/_DCBgPlV)*
-  - [LilyGo](https://lilygo.cc/) [T-Display S3 Long](https://s.click.aliexpress.com/e/_Dl6UVMx)*
-  - [LilyGo](https://lilygo.cc/) [T-Watch S3](https://s.click.aliexpress.com/e/_DEZVvH1)*
-  - [LilyGo](https://lilygo.cc/) [T-CameraPlus ESP32-S3](https://s.click.aliexpress.com/e/_DkytBeT)*
-  - [LilyGo](https://lilygo.cc/) [T-RGB](https://s.click.aliexpress.com/e/_Dem6i0b)*
-  - [LilyGo](https://lilygo.cc/) [T-Deck](https://s.click.aliexpress.com/e/_DBPnZmL)*
-  - [LilyGo](https://lilygo.cc/) [T-Deck Plus](https://s.click.aliexpress.com/e/_DDeskaP)*
-  - [LilyGo](https://lilygo.cc/) [T3-S3](https://s.click.aliexpress.com/e/_c3o28ou9)* LoRa 2.4 GHz
-  - [Waveshare](https://www.waveshare.com/) [ESP32-S3 GEEK](https://s.click.aliexpress.com/e/_c35mBhkF)*
-  - [Waveshare](https://www.waveshare.com/) [ESP32-S3 AMOLED 2.06](https://s.click.aliexpress.com/e/_c34ka7n1)* Watch with 16 MB flash, AMOLED touch display, Wi-Fi 5, BT 5 LE, accelerometer, gyroscope
   - [Elecrow](https://www.elecrow.com/) [CrowPanel 2.1 inch HMI](https://s.click.aliexpress.com/e/_c4LjYad5)* Rotary Display 480*480 IPS Round Touch Knob Screen
-
-- ESP32 C6 single core with WiFi 6 and BT-5 LE
-  - [NanoESP32-C6](https://s.click.aliexpress.com/e/_ooBtUih)* with 16MB flash
-  - [UICPAL ESP32-C6](https://s.click.aliexpress.com/e/_DeLjVMb)* with 4MB flash and W2812 RGB LED
-  - [LilyGo](https://lilygo.cc/) [T-QT C6](https://lilygo.cc/products/t-qt-c6) Ring [SDK](https://github.com/mcuw/esp32-t-qt-c6-sdk) with 4 MB flash, touch display, 6-Axis Sensor
-  - [Waveshare](https://www.waveshare.com/) [ESP32-C6 AMOLED 2.06](https://s.click.aliexpress.com/e/_c34ka7n1)* Watch with 16 MB flash, AMOLED touch display, Wi-Fi 6, BT 5 LE, accelerometer, gyroscope
-
-- ESP32 P4 with dual-core processor up to 400 MHz
-  - [GUITION](https://www.guition.com/) [10.1" ESP32-P4 LCD Display Development Board](https://s.click.aliexpress.com/e/_c2vAKbXD)* with 1280x800 Capacitive Touch Screen, Wi-Fi 6, battery and speaker
-  - [GUITION](https://www.guition.com/) [JC-ESP32P4-M3-DEV](https://s.click.aliexpress.com/e/_c39YU9i9)* ESP32-P4 with ESP32-C6 Mini, Wi-Fi 6, Ethernet, TF card slot, Speaker header, Li-Ion Battery connector, microphone
-  - [GUITION](https://www.guition.com/) [C4880P443C-I-W-Y](https://s.click.aliexpress.com/e/_c4TfKXmd)* ESP32-P4 with ESP32-C6, 4.3 inch 480 * 800 IPS capacitive touch, 2MP camera module, Wi-Fi 6, Ethernet, TF card slot, Speaker header, Li-Ion Battery connector, BT 5
 
 ## Prototyping
 
