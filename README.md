@@ -1,6 +1,6 @@
 # ESP32 S3 CrowPanel 2.1 inch HMI rotary encoder and touch display
 
-<img src="doc/hero_crawpanel.png" alt="ESP32 CrowPanel 2.1 inch" width="1024" />
+<img src="doc/hero_crowpanel.png" alt="ESP32 CrowPanel 2.1 inch" width="1024" />
 
 ## Description
 
